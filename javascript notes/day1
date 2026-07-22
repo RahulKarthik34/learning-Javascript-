@@ -1,0 +1,264 @@
+# 📅 Day 1 - JavaScript Basics
+
+## 🎯 Goal
+Understand the fundamentals of JavaScript, how variables work, and set up a GitHub workflow for the learning journey.
+
+
+# 📚 Topics Covered
+
+## 1. Introduction to JavaScript
+- What is JavaScript?
+- Why JavaScript is used in web development.
+- Role of JavaScript in making websites interactive.
+
+---
+
+## 2. console.log()
+
+Used to display output in the browser's console.
+
+Example:
+
+```javascript
+console.log("Hello World");
+```
+
+---
+
+## 3. Variables
+
+A variable is a container used to store data.
+
+Example:
+
+```javascript
+let userName = "Rahul";
+```
+
+---
+
+## 4. let
+
+- Used to declare variables.
+- Value can be changed later.
+- Cannot be declared again with the same name in the same scope.
+
+Example:
+
+```javascript
+let age = 22;
+age = 23;
+```
+
+---
+
+## 5. const
+
+- Used for values that should not change.
+- Cannot be reassigned after declaration.
+
+Example:
+
+```javascript
+const appName = "TaskFlow Pro";
+```
+
+---
+
+## 6. var
+
+Learned about the older way of declaring variables.
+
+Key points:
+- Function scoped.
+- Can be redeclared.
+- Mostly avoided in modern JavaScript.
+
+---
+
+## 7. Difference Between let, const and var
+
+| let          | const           | var               |
+|------        |--------         |-----              |
+| Can reassign | Cannot reassign | Can reassign      |
+| Block scoped | Block scoped    | Function scoped   |
+| Modern JavaScript              | Modern JavaScript | Old JavaScript |
+
+---
+
+## 8. Naming Variables
+
+Good examples:
+
+```javascript
+userName
+totalTasks
+completedTasks
+```
+
+Avoid unclear names like:
+
+```javascript
+a
+x
+data
+```
+
+---
+
+## 9. Template Literals
+
+Using backticks (` `) and `${}` to insert variables inside strings.
+
+Example:
+
+```javascript
+let name = "Rahul";
+
+console.log(`Welcome ${name}`);
+```
+
+Benefits:
+- Cleaner
+- Easier to read
+- Preferred over string concatenation
+
+---
+
+## 10. Assignment Operator (=)
+
+Used to assign values.
+
+Example:
+
+```javascript
+let age = 22;
+```
+
+The `=` operator assigns a value to a variable.
+
+---
+
+## 11. Expressions
+
+JavaScript evaluates expressions before storing the result.
+
+Example:
+
+```javascript
+let pendingTasks = totalTasks - completedTasks;
+```
+
+---
+
+## 12. JavaScript Execution Flow
+
+JavaScript executes code from top to bottom.
+
+Steps:
+1. Read the code.
+2. Create variables.
+3. Store values.
+4. Execute statements one by one.
+
+---
+
+# 💻 Practical Work
+
+Created variables and printed them using `console.log()`.
+
+Example:
+
+```javascript
+let userName = "Rahul";
+let age = 22;
+let qualification = "Intermediate";
+
+console.log(userName);
+console.log(age);
+console.log(qualification);
+```
+
+---
+
+# 🧠 Interview Questions
+
+### 1. What is JavaScript?
+
+JavaScript is a programming language used to make web pages interactive.
+
+---
+
+### 2. What is a variable?
+
+A variable is a container used to store data.
+
+---
+
+### 3. Difference between let, const and var?
+
+- let → Value can change.
+- const → Value cannot change.
+- var → Older way of declaring variables.
+
+---
+
+### 4. What is console.log()?
+
+Used to print output in the browser console.
+
+---
+
+### 5. Why use Template Literals?
+
+Template literals make strings easier to read and allow variables to be inserted using `${}`.
+
+---
+
+# 📂 Git & GitHub
+
+Learned how to:
+
+- Install Git
+- Initialize a Git repository
+- Check repository status
+- Stage files
+- Create commits
+- Connect a local repository to GitHub
+- Pull changes from GitHub
+- Resolve the first merge
+- Push code to GitHub
+
+Commands learned:
+
+```bash
+git init
+git status
+git add .
+git commit -m "message"
+git branch -M main
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+```
+
+# ✅ Key Takeaways
+
+- JavaScript variables store data.
+- Use `let` for values that change.
+- Use `const` for values that should remain constant.
+- Avoid using `var` in modern JavaScript.
+- Use template literals for cleaner strings.
+- JavaScript executes code line by line.
+- Git helps track changes and GitHub stores projects online.
+
+# 🎯 Assignment Completed
+
+- Created variables.
+- Used `console.log()`.
+- Understood `let`, `const`, and `var`.
+- Practiced template literals.
+- Set up Git and GitHub.
+- Pushed the first JavaScript project to GitHub successfully.
+## ✅ Day 1 Status
+
+**Completed:** Day 1 of 40 🎉
