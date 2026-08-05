@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-
+<body id="fulll-screen">
+    
     <div id="boot-screen">
+        
 
         <h1> WELCOME TO NEW OS</h1>
         <p> setting up your system........</p>
@@ -21,9 +22,13 @@
     </div>
 
     <div id="login-screen">
+        <div>
+            <img src="../project\iamges\profie.jpg" alt="login image" id="log-img">
+        </div>
         <h1> HELLO WELCOME BACK </h1>
-        <input type="password" placeholder="                    ************" id="password1">
-        <button id="login-btn"> SUBMIT</button>
+        <h2> ENTER YOU PIN </h2>
+        <input type="password" placeholder="PIN " id="password1">
+        <button id="login-btn"> ENTER</button>
     </div>
 
     <div id="desktop-screen">
@@ -59,10 +64,13 @@
                     <h2>📝 Notepad</h2>
                     <button id="notes-close">❌</button>
                 </div>
-
+                <input type="text" id="notes-title" placeholder="Enter title">
                 <textarea id="notes-text" placeholder="Write your notes here..."></textarea>
+                <button id="new-b"> 📂new file</button>
                 <button id="save-b">💾 Save</button>
-            </div>
+                </div>
+
+            
 
         </div>
         <div class="taskbar">
