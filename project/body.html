@@ -58,17 +58,38 @@
                 <span>🗒️</span>
                 <p> notepad</p>
             </div>
+            <div class="icon" id="notes-icon">
+                <span>⚙️</span>
+                <p> settings</p>
+            </div>
             <div id="notes-window">
-
+                
                 <div id="notes-header">
+                    
                     <h2>📝 Notepad</h2>
-                    <button id="notes-close">❌</button>
+                    <div class="notes-controls">
+                        <button id="notes-min">➖</button>
+                        <button id="notes-max">⬜</button>
+                        <button id="notes-close">❌</button>
+                    </div>
+                    
                 </div>
-                <input type="text" id="notes-title" placeholder="Enter title">
-                <textarea id="notes-text" placeholder="Write your notes here..."></textarea>
-                <button id="new-b"> 📂new file</button>
-                <button id="save-b">💾 Save</button>
+                
+                <div id="notes-content">
+                    <div id="total_files">
+                        <h2 style="color: red;">📂file</h2>
+                        <div id="new_files"></div>
+                    </div>
+                    <div id="notes-body">
+                        <input type="text" id="notes-title" placeholder="Enter title">
+                        <textarea id="notes-text" placeholder="Write your notes here..."></textarea>
+                        <div id="notes-actions">
+                            <button id="new-b"> 📂new file</button>
+                            <button id="save-b">💾 Save</button>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
             
 
@@ -76,7 +97,7 @@
         <div class="taskbar">
 
             <div class="taskbar-icons">
-                <input type="text" placeholder="search" id="serch1">
+                <input type="text" placeholder="   🔍search" id="serch1">
                 <a href="#">❤️</a>
                 <a href="#">⭐</a>
                 <a href="#">🎁</a>

@@ -3,13 +3,44 @@ const loadingscreen = document.getElementById("login-screen");
 const passInput = document.getElementById("password1");
 const btn11 = document.getElementById("login-btn");
 const desktop = document.getElementById("desktop-screen");
-const correctPassword = "1234";
+const correctPassword = "";
 const notes = document.getElementById("notes-window");
 const btn_close = document.getElementById("notes-close");
+const btn_min = document.getElementById("notes-min");
 const icons = document.getElementById("notes-icon");
 const savebtn = document.getElementById("save-b");
 const textnote = document.getElementById("notes-text");
 const texttitle = document.getElementById("notes-title");
+const notemax  = document.getElementById("notes-max");
+let ismaxsize = false;
+
+
+const mote =()=>{
+  if(!ismaxsize){
+    // maximize to viewport while leaving the taskbar visible
+    notes.style.position = "fixed";
+    notes.style.top = "0";
+    notes.style.left = "0";
+    notes.style.width = "100vw";
+    notes.style.height = "calc(100vh - 50px)";
+    notes.style.borderRadius = "0";
+    notes.style.zIndex = "999";
+    notemax.innerText = "◾";
+    ismaxsize = true;
+  }else{
+    // restore to previous windowed size
+    notes.style.position = "absolute";
+    notes.style.width = "500px";
+    notes.style.height = "450px";
+    notes.style.top = "100px";
+    notes.style.left = "300px";
+    notes.style.borderRadius = "10px";
+    notemax.innerText = "⬛";
+    ismaxsize = false;
+  }
+}
+
+notemax.addEventListener("click",mote);
 
 
 
@@ -31,7 +62,16 @@ savebtn.addEventListener("click", function () {
 });
 
 icons.addEventListener("click", function () {
+  // open notes in default windowed size
   notes.style.display = "flex";
+  notes.style.position = "absolute";
+  notes.style.width = "500px";
+  notes.style.height = "450px";
+  notes.style.top = "100px";
+  notes.style.left = "300px";
+  notes.style.borderRadius = "10px";
+  if (notemax) notemax.innerText = "⬜";
+  ismaxsize = false;
   console.log("clicked");
 });
 
