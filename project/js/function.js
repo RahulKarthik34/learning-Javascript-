@@ -13,6 +13,32 @@ const textnote = document.getElementById("notes-text");
 const texttitle = document.getElementById("notes-title");
 const notemax  = document.getElementById("notes-max");
 let ismaxsize = false;
+const notebook =document.getElementById("new-b")
+
+
+const box =document.getElementById("new_files")
+
+
+const notes1 = [];
+
+
+
+const filemix=()=>{
+  const note ={
+  title:"Untitled",
+  body:""
+}
+console.log("new file working")
+console.log(note)
+notes1.push(note)
+const box1 = document.createElement("div");
+box1.innerText="📄hello";
+box1.className="file"
+box.appendChild(box1)
+}
+notebook.addEventListener("click",filemix)
+    
+       
 
 
 const mote =()=>{

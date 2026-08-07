@@ -147,6 +147,11 @@
     overflow: hidden;
 }
 
+.file{
+    width:100px;
+    overflow:hidden;
+    color: #f5d7ac;
+}
 #total_files {
     width: 120px;
     max-width: 150px;
