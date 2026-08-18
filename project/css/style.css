@@ -150,7 +150,9 @@
 .file{
     width:100px;
     overflow:hidden;
-    color: #f5d7ac;
+    color: #1a1a1a;
+    padding: 10px;
+    
 }
 #total_files {
     width: 120px;
