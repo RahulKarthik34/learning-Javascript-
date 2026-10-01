@@ -29,7 +29,7 @@ const displayNote = (note) => {
   noteCard.className = "file";
 
   const titleLabel = document.createElement("span");
-  titleLabel.textContent = "🗒️ " + note.title;
+  titleLabel.textContent = "" + note.title;
   noteCard.appendChild(titleLabel);
 
   const DeleteFile = document.createElement("button");
@@ -133,7 +133,7 @@ function saveNotes() {
     if (currentFileCard) {
       const titleLabel = currentFileCard.querySelector("span");
       if (titleLabel) {
-        titleLabel.textContent = "🗒️ " + CurrentFile.title;
+        titleLabel.textContent = "" + CurrentFile.title;
       }
     }
 
