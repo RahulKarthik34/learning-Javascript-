@@ -48,3 +48,27 @@
 
 // console.log(Object.keys(obj).length)
 
+let arr=[{
+    name :"rahul",
+    age : 23,
+    city : "delhi",
+    gender : "male"
+},
+{
+    name :"karthik",
+    age : 24,
+    city : "datah",
+    gender : "male"
+},
+{
+    name :"guru",
+    age : 24,
+    city : "bangalore",
+    gender : "female"
+}]
+
+let result = arr.filter((obj=>{
+    return (obj.gender === "male")
+}))
+
+console.log(result)
